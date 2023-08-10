@@ -32,7 +32,7 @@ if __name__ == '__main__':
     pca = PCA(n_components=3)
     pca.fit(X_train_scaled)
 
-    #Incremental PCA
+    #Incremental PCA, here we create only 3 artificial features from the original group of features
     ipca = IncrementalPCA(n_components=3, batch_size=10)
     ipca.fit(X_train_scaled)
 
